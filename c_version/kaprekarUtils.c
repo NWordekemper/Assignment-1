@@ -32,7 +32,7 @@ int isKaprekar(int n) {
   //compute the square
   long square = n * (long) n;
   //compute the number of digits of the square
-  int numDigits = (int) log10(n) + 1;
+  int numDigits = (int) log10(square) + 1; //needs to be square
   long modulus = 1; // needs to = 1
   long first, second;
 
